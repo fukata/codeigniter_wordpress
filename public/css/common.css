@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+/* ================================================
+css initialize
+================================================ */
+* {
+	margin:0;
+	padding:0;
+	font-family:"Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"
+	ヒラギノ角ゴ Pro W3","MS P ゴシック",verdana, sans-serif;
+}
+
+a {
+	color:#0C5F95;
+	text-decoration:none;
+}
+
+a:link {
+	color:#0C5F95;
+	text-decoration:none;
+}
+
+a:visited {
+	/*color:#666;*/
+	color:#0C5F95;
+	text-decoration:none;
+}
+
+a:hover {
+	/*color:#ddd;*/
+	/*text-decoration:none;*/
+	color:#0C5F95;
+	text-decoration:underline;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-size: 13px;
+}
+
+/* ================================================
+clearfix
+================================================ */
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix{
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+
+/* ================================================
+container
+================================================ */
+#container {
+}
+
+/* ================================================
+header navi
+================================================ */
+#header-navi {
+    background-color: #000;
+    color: #fff;
+}
