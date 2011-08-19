@@ -19,7 +19,15 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome');
+		$this->load->helper('cookie');
+		$siteurl = 'http://wp3.org/';
+		$wp_cookie_name = 'wordpress_logged_in_' . md5($siteurl);
+		$wp_cookie = get_cookie($wp_cookie_name);
+
+		$data = new stdClass();
+		$data->userdata = $this->session->all_userdata();
+		$data->wp_cookie = $wp_cookie;
+		$this->load->view('welcome', $data);
 	}
 }
 
